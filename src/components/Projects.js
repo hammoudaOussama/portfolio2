@@ -116,7 +116,7 @@ const Projects = () => {
             fullDescription: "This shopping cart project is a modern full-stack web application developed using React on the frontend and C# (ASP.NET Core) on the backend. The application enables users to browse products, add or remove items from their cart, update quantities, and automatically see the total price update in real-time.",
             image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&h=400&fit=crop",
             tech: ["React", "C#", "Redis", "WebSocket", "Tailwind CSS", "MongoDB"],
-            github: "https://github.com/yourusername/crypto-tracker",
+            github: "https://github.com/hammoudaOussama/shopping-cart",
             live: "https://github.com/hammoudaOussama/shopping-cart",
             features: [
                 "Real-time Price Updates",
