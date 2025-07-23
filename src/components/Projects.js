@@ -14,7 +14,7 @@ const Projects = () => {
             fullDescription: "A comprehensive e-commerce platform built with React and Node.js. Features include user authentication, payment integration with Stripe, admin dashboard, inventory management, and real-time order tracking. The platform supports multiple payment methods and has a responsive design that works seamlessly across all devices.",
             image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
             tech: ["React", "Node.js", "MongoDB", "Express", "Stripe", "JWT"],
-            github: "https://github.com/yourusername/ecommerce",
+            github: "https://github.com/hammoudaOussama/ecom",
             live: "https://your-ecommerce.com",
             features: [
                 "User Authentication & Authorization",
@@ -51,7 +51,7 @@ const Projects = () => {
             image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
             tech: ["Vue.js", "D3.js", "Chart.js", "OpenWeather API", "Mapbox", "SCSS"],
             github: "https://github.com/yourusername/weather",
-            live: "https://your-weather-app.com",
+            live: "https://github.com/hammoudaOussama/projet-flutter",
             features: [
                 "Real-time Weather Data",
                 "Interactive Maps",
@@ -68,7 +68,7 @@ const Projects = () => {
             fullDescription: "A comprehensive social media analytics dashboard that helps businesses track their social media performance across multiple platforms. Built with React and Python, it integrates with various social media APIs to provide real-time insights, engagement metrics, and automated reporting features.",
             image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
             tech: ["React", "Java", "Springboot", "PostgreSQL", "Redis", "Chart.js"],
-            github: "https://github.com/hammoudaoussama/ChatBot Ai",
+            github: "https://github.com/hammoudaOussama/AI-ChatBot",
             
                features: [
             "Natural Language Processing (NLP)",
@@ -92,7 +92,7 @@ const Projects = () => {
             fullDescription: "A full-featured learning management system designed for educational institutions and corporate training. Built with Next.js and Node.js, it includes course creation tools, student progress tracking, interactive quizzes, video streaming, and certification management.",
             image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
             tech: ["React", "Django", "SQLite", "WSL", "AWS CLI"],
-            github: "https://github.com/hammoudaoussama/Migration Platform",
+            github: "https://github.com/hammoudaOussama/Migration-Plat",
             live: "https://your-lms.com",
            features: [
             "Document Management & Verification",
@@ -111,20 +111,20 @@ const Projects = () => {
         },
         {
             id: 6,
-            title: "Cryptocurrency Tracker",
-            shortDescription: "Real-time crypto portfolio tracking and analysis",
-            fullDescription: "A sophisticated cryptocurrency portfolio tracker that provides real-time price updates, portfolio analysis, and market insights. Built with React and integrated with multiple crypto APIs, it features advanced charting, price alerts, and portfolio optimization suggestions.",
+            title: "Online Shopping-Cart",
+            shortDescription: "A responsive and interactive shopping cart web application ",
+            fullDescription: "This shopping cart project is a modern full-stack web application developed using React on the frontend and C# (ASP.NET Core) on the backend. The application enables users to browse products, add or remove items from their cart, update quantities, and automatically see the total price update in real-time.",
             image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=600&h=400&fit=crop",
-            tech: ["React", "Node.js", "Redis", "WebSocket", "CoinGecko API", "TradingView"],
+            tech: ["React", "C#", "Redis", "WebSocket", "Tailwind CSS", "MongoDB"],
             github: "https://github.com/yourusername/crypto-tracker",
-            live: "https://your-crypto-tracker.com",
+            live: "https://github.com/hammoudaOussama/shopping-cart",
             features: [
                 "Real-time Price Updates",
-                "Portfolio Analysis",
+                "Stock Management",
                 "Price Alerts",
                 "Advanced Charting",
                 "Market News",
-                "Performance Analytics"
+                "Checkout Process"
             ]
         }
     ];
