@@ -1,8 +1,11 @@
 'use client';
 
-import { Github, Linkedin, Mail, ArrowUp, Heart } from 'lucide-react';
+import { useState } from 'react';
+import { Github, Linkedin, Mail, ArrowUp, Heart, QrCode } from 'lucide-react';
 
 const Footer = () => {
+  const [showQR, setShowQR] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -85,6 +88,31 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* QR Code Section */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-white">Share Portfolio</h4>
+            <div className="space-y-4">
+              <button
+                onClick={() => setShowQR(!showQR)}
+                className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+              >
+                <QrCode size={16} className="mr-2" />
+                {showQR ? 'Hide QR Code' : 'Show QR Code'}
+              </button>
+
+              {showQR && (
+                <div className="bg-white p-4 rounded-lg inline-block">
+                  <img
+                    src="/images/portfolio-qr.png"
+                    alt="Portfolio QR Code"
+                    className="w-32 h-32"
+                  />
+                  <p className="text-xs text-gray-600 text-center mt-2">Scan to visit portfolio</p>
+                </div>
+              )}
+            </div>
+          </div> {/* ✅ This closing tag was missing before */}
+
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4 text-white">Get In Touch</h4>
@@ -105,7 +133,6 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            {/* Copyright */}
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               <p className="flex items-center">
                 © {currentYear} Hammouda Oussama. Made with
@@ -114,7 +141,6 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Back to Top */}
             <button
               onClick={scrollToTop}
               className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
