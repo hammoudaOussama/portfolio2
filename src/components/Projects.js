@@ -50,7 +50,7 @@ const Projects = () => {
             fullDescription: "An interactive weather dashboard that provides comprehensive weather information with beautiful visualizations. Built with Vue.js and D3.js, it features location-based forecasts, interactive maps, detailed weather analytics, and historical data comparison. The dashboard uses multiple weather APIs to ensure accuracy.",
             image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
             tech: ["Vue.js", "D3.js", "Chart.js", "OpenWeather API", "Mapbox", "SCSS"],
-            github: "https://github.com/yourusername/weather",
+            github: "https://github.com/hammoudaOussama/projet-flutter",
             live: "https://github.com/hammoudaOussama/projet-flutter",
             features: [
                 "Real-time Weather Data",
