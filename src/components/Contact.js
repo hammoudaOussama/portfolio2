@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
@@ -24,18 +25,42 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+    try {
+      // Initialize EmailJS
+      emailjs.init('WLR4k1bG5h1nhRw7X');
 
-      // Reset status after 3 seconds
+      const result = await emailjs.send(
+        'service_x162a79',
+        'template_nqts7hx',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'hammoudaoussama23@gmail.com'
+        }
+      );
+
+      if (result.text === 'OK') {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        // Reset status after 3 seconds
+        setTimeout(() => {
+          setSubmitStatus('');
+        }, 3000);
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      console.log('Erreur:', error);
+      // Reset error status after 3 seconds
       setTimeout(() => {
         setSubmitStatus('');
       }, 3000);
-    }, 2000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
 
   const contactInfo = [
     {
@@ -241,6 +266,13 @@ const Contact = () => {
                 <div className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg">
                   <p className="text-green-400 text-center">
                     ✅ Message sent successfully! I'll get back to you soon.
+                  </p>
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg">
+                  <p className="text-red-400 text-center">
+                    ❌ Failed to send message. Please try again.
                   </p>
                 </div>
               )}

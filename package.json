@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/cli": "^4.1.11",
     "critters": "^0.0.23",
+    "emailjs": "^4.0.3",
     "lucide-react": "^0.263.1",
     "next": "15.1.6",
     "react": "^18",
