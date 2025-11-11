@@ -10,7 +10,7 @@ const Experience = () => {
       company: 'Zen Networks',
       location: 'Casablanca, Morocco',
       period: 'March 2025 - September 2025',
-      logo: '/logos/zen.png',
+      logo: '/logos/Zen.png',
       logoAlt: 'ZN',
       description: 'Designing and implementing cloud infrastructure solutions using AWS and modern DevOps practices. Managing cloud migrations, CI/CD pipelines, and ensuring high availability systems.',
       technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'Python'],
