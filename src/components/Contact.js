@@ -179,7 +179,7 @@ const Contact = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">
-                    Your Name *
+                    Your Name 
                   </label>
                   <input
                     type="text"
@@ -193,7 +193,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <label className="block text-gray-300 text-sm font-medium mb-2">
-                    Email Address *
+                    Email Address 
                   </label>
                   <input
                     type="email"
@@ -210,7 +210,7 @@ const Contact = () => {
               {/* Subject */}
               <div>
                 <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Subject *
+                  Subject 
                 </label>
                 <input
                   type="text"
@@ -219,14 +219,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
-                  placeholder="Project Discussion"
+                  placeholder=""
                 />
               </div>
 
               {/* Message */}
               <div>
                 <label className="block text-gray-300 text-sm font-medium mb-2">
-                  Message *
+                  Message 
                 </label>
                 <textarea
                   name="message"
@@ -235,7 +235,7 @@ const Contact = () => {
                   required
                   rows="5"
                   className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors resize-vertical"
-                  placeholder="Tell me about your project..."
+                  placeholder=""
                 ></textarea>
               </div>
 
