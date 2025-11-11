@@ -69,7 +69,7 @@ const Header = () => {
                                 key={item.id}
                                 onClick={() => scrollToSection(item.id)}
                                 className={`transition-colors duration-200 font-medium ${activeSection === item.id
-                                    ? 'text-blue-400'
+                                    ? 'text-cyan-400'
                                     : 'text-gray-300 hover:text-white'
                                     }`}
                             >
@@ -98,7 +98,7 @@ const Header = () => {
                                 key={item.id}
                                 onClick={() => scrollToSection(item.id)}
                                 className={`block w-full text-left px-3 py-2 rounded-md font-medium transition-colors ${activeSection === item.id
-                                    ? 'text-blue-400 bg-gray-700'
+                                    ? 'text-cyan-400 bg-gray-700'
                                     : 'text-gray-300 hover:text-white hover:bg-gray-700'
                                     }`}
                             >

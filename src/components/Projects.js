@@ -149,14 +149,14 @@ const Projects = () => {
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Here are some of my recent projects that showcase my skills and passion for creating amazing digital experiences.
                     </p>
-                    <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-amber-500 mx-auto mt-6"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="group bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-gray-700 hover:border-blue-500/50"
+                            className="group bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 border border-gray-700 hover:border-cyan-500/50"
                         >
                             {/* Project Image */}
                             <div className="relative h-48 overflow-hidden">
@@ -170,7 +170,7 @@ const Projects = () => {
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <button
                                         onClick={() => openModal(project)}
-                                        className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors flex items-center"
+                                        className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors flex items-center"
                                     >
                                         <Eye size={16} className="mr-2" />
                                         View Details
@@ -180,7 +180,7 @@ const Projects = () => {
 
                             {/* Project Info */}
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold mb-3 text-blue-400 group-hover:text-blue-300 transition-colors">
+                                <h3 className="text-xl font-semibold mb-3 text-cyan-400 group-hover:text-cyan-300 transition-colors">
                                     {project.title}
                                 </h3>
                                 <p className="text-gray-300 mb-4 text-sm leading-relaxed">
@@ -192,7 +192,7 @@ const Projects = () => {
                                     {project.tech.slice(0, 3).map((tech, techIndex) => (
                                         <span
                                             key={techIndex}
-                                            className="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs font-medium"
+                                            className="px-2 py-1 bg-cyan-500/20 text-cyan-300 rounded text-xs font-medium"
                                         >
                                             {tech}
                                         </span>
@@ -209,7 +209,7 @@ const Projects = () => {
                                     <div className="flex space-x-3">
                                         <a
                                             href={project.github}
-                                            className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                                            className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors text-sm"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -218,7 +218,7 @@ const Projects = () => {
                                         </a>
                                         <a
                                             href={project.live}
-                                            className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                                            className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors text-sm"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -228,7 +228,7 @@ const Projects = () => {
                                     </div>
                                     <button
                                         onClick={() => openModal(project)}
-                                        className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
+                                        className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
                                     >
                                         Learn More →
                                     </button>
@@ -265,12 +265,12 @@ const Projects = () => {
 
                                         {/* Tech Stack */}
                                         <div className="mb-6">
-                                            <h4 className="text-lg font-semibold mb-3 text-blue-400">Technologies Used</h4>
+                                            <h4 className="text-lg font-semibold mb-3 text-cyan-400">Technologies Used</h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {selectedProject.tech.map((tech, index) => (
                                                     <span
                                                         key={index}
-                                                        className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-lg text-sm"
+                                                        className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-lg text-sm"
                                                     >
                                                         {tech}
                                                     </span>
@@ -291,7 +291,7 @@ const Projects = () => {
                                             </a>
                                             <a
                                                 href={selectedProject.live}
-                                                className="flex items-center px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors"
+                                                className="flex items-center px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg transition-colors"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >
@@ -304,16 +304,16 @@ const Projects = () => {
                                     {/* Project Details */}
                                     <div>
                                         <div className="mb-6">
-                                            <h4 className="text-lg font-semibold mb-3 text-blue-400">About This Project</h4>
+                                            <h4 className="text-lg font-semibold mb-3 text-cyan-400">About This Project</h4>
                                             <p className="text-gray-300 leading-relaxed">{selectedProject.fullDescription}</p>
                                         </div>
 
                                         <div>
-                                            <h4 className="text-lg font-semibold mb-3 text-blue-400">Key Features</h4>
+                                            <h4 className="text-lg font-semibold mb-3 text-cyan-400">Key Features</h4>
                                             <ul className="space-y-2">
                                                 {selectedProject.features.map((feature, index) => (
                                                     <li key={index} className="flex items-center text-gray-300">
-                                                        <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                                                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
                                                         {feature}
                                                     </li>
                                                 ))}

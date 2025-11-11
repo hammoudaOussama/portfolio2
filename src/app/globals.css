@@ -2,22 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom gradient utility */
+/* Custom gradient utility - Tech theme */
 .gradient-text {
-  @apply bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-cyan-400 to-amber-500 bg-clip-text text-transparent;
 }
 
 /* Button utilities */
 .btn-primary {
-  @apply px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-medium transition-all duration-300 transform hover:scale-105;
+  @apply px-6 py-3 bg-gradient-to-r from-cyan-500 to-amber-600 rounded-lg text-white font-medium transition-all duration-300 transform hover:scale-105;
 }
 
 .btn-secondary {
-  @apply px-6 py-3 border-2 border-gray-600 rounded-lg text-gray-300 font-medium transition-all duration-300 hover:border-blue-400 hover:text-blue-400;
+  @apply px-6 py-3 border-2 border-gray-600 rounded-lg text-gray-300 font-medium transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400;
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
 }
 
 /* Smooth scrolling */

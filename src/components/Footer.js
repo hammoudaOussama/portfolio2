@@ -65,7 +65,7 @@ const Footer = () => {
                   rel={social.href.startsWith('mailto') ? '' : 'noopener noreferrer'}
                   aria-label={social.name}
                 >
-                  <social.icon size={20} className="text-gray-400 hover:text-blue-400 transition-colors" />
+                  <social.icon size={20} className="text-gray-400 hover:text-cyan-400 transition-colors" />
                 </a>
               ))}
             </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.name}
                   </button>
@@ -119,7 +119,7 @@ const Footer = () => {
 
             <button
               onClick={scrollToTop}
-              className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+              className="flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-amber-600 text-white rounded-lg hover:from-cyan-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105"
               aria-label="Back to top"
             >
               <ArrowUp size={16} className="mr-2" />
@@ -138,7 +138,7 @@ const Footer = () => {
               This portfolio is open source -
               <a
                 href="https://github.com/hammoudaoussama/portfolio"
-                className="text-blue-400 hover:text-blue-300 ml-1"
+                className="text-cyan-400 hover:text-cyan-300 ml-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -152,7 +152,7 @@ const Footer = () => {
       {/* Floating Back to Top Button (Mobile) */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 md:hidden p-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40"
+        className="fixed bottom-6 right-6 md:hidden p-3 bg-gradient-to-r from-cyan-500 to-amber-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40"
         aria-label="Back to top"
       >
         <ArrowUp size={20} />

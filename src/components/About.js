@@ -10,14 +10,14 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">About Me</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-amber-500 mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-blue-400">Who I Am</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-cyan-400">Who I Am</h3>
              <p className="text-gray-300 leading-relaxed mb-4">
   I'm a full-stack developer and cloud computing enthusiast with a solid foundation in software engineering and a passion for building robust and scalable applications. With hands-on experience in both frontend and backend development, I enjoy creating seamless user experiences backed by powerful and secure architectures.
 </p>
@@ -36,11 +36,11 @@ const About = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-6 py-6">
               <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                <div className="text-2xl font-bold text-blue-400 mb-1">50+</div>
+                <div className="text-2xl font-bold text-cyan-400 mb-1">10+</div>
                 <div className="text-gray-400 text-sm">Projects Completed</div>
               </div>
               <div className="text-center p-4 bg-gray-800/50 rounded-lg">
-                <div className="text-2xl font-bold text-purple-400 mb-1">3+</div>
+                <div className="text-2xl font-bold text-amber-500 mb-1">2+</div>
                 <div className="text-gray-400 text-sm">Years Experience</div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const About = () => {
               <a
                 href="/resume.pdf"  // This will work once you add the file
                 download="Hammouda_Oussama_Resume.pdf"  // Custom download name
-                className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+                className="flex items-center px-6 py-3 bg-gradient-to-r from-cyan-500 to-amber-600 rounded-lg hover:from-cyan-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105"
               >
                 <Download size={20} className="mr-2" />
                 Download Resume

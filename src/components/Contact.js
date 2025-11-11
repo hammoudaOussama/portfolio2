@@ -94,7 +94,7 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/oussama-hammouda-202840271/',
-      color: 'hover:text-blue-400'
+      color: 'hover:text-cyan-400'
     },
     
   ];
@@ -109,13 +109,13 @@ const Contact = () => {
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Have a project in mind? I'd love to hear about it. Let's chat and bring your ideas to life!
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-amber-500 mx-auto mt-6"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-8 text-blue-400">Get In Touch</h3>
+            <h3 className="text-2xl font-bold mb-8 text-cyan-400">Get In Touch</h3>
 
             {/* Contact Details */}
             <div className="space-y-6 mb-8">
@@ -127,7 +127,7 @@ const Contact = () => {
                   target={info.href.startsWith('http') ? '_blank' : '_self'}
                   rel={info.href.startsWith('http') ? 'noopener noreferrer' : ''}
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-cyan-500 to-amber-600 rounded-lg flex items-center justify-center mr-4">
                     <info.icon size={20} className="text-white" />
                   </div>
                   <div>
@@ -172,7 +172,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="bg-gray-800 p-8 rounded-xl border border-gray-700">
-            <h3 className="text-2xl font-bold mb-6 text-blue-400">Send Message</h3>
+            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Send Message</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name and Email */}
@@ -187,7 +187,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
                     placeholder=""
                   />
                 </div>
@@ -201,7 +201,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
+                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
                     placeholder=""
                   />
                 </div>
@@ -218,7 +218,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 transition-colors"
                   placeholder=""
                 />
               </div>
@@ -234,7 +234,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-400 transition-colors resize-vertical"
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent text-white placeholder-gray-400 transition-colors resize-vertical"
                   placeholder=""
                 ></textarea>
               </div>
@@ -245,7 +245,7 @@ const Contact = () => {
                 disabled={isSubmitting}
                 className={`w-full py-3 px-6 rounded-lg font-medium transition-all duration-300 flex items-center justify-center ${isSubmitting
                     ? 'bg-gray-600 cursor-not-allowed'
-                    : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105'
+                    : 'bg-gradient-to-r from-cyan-500 to-amber-600 hover:from-cyan-600 hover:to-amber-700 transform hover:scale-105'
                   } text-white`}
               >
                 {isSubmitting ? (
@@ -294,7 +294,7 @@ const Contact = () => {
             </a>
             <a
               href="mailto:hammoudaoussama23@gmail.com?subject=Quick Question"
-              className="px-8 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400 hover:text-white transition-all duration-300"
+              className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-white transition-all duration-300"
             >
               ✉️ Quick Email
             </a>
