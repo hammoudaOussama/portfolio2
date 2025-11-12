@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom gradient utility - Tech theme */
+/* Custom gradient utility */
 .gradient-text {
+  /* Tech/IT palette: cyan -> amber */
   @apply bg-gradient-to-r from-cyan-400 to-amber-500 bg-clip-text text-transparent;
 }
 
@@ -17,7 +18,8 @@
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 20px rgba(34, 211, 238, 0.5);
+  /* subtle cyan glow */
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
 }
 
 /* Smooth scrolling */

@@ -25,7 +25,7 @@ const Skills = () => {
                 { name: 'Express.js', level: 88, color: 'from-gray-400 to-gray-600' },
                 { name: 'Django', level: 90, color: 'from-green-600 to-green-800' },
                 { name: 'REST APIs', level: 85, color: 'from-cyan-400 to-cyan-600' },
-                { name: 'Java', level: 93, color: 'from-amber-400 to-amber-600' },
+                { name: 'Java', level: 93, color: 'from-pink-400 to-purple-500' },
             ]
         },
         Database: {
@@ -47,7 +47,7 @@ const Skills = () => {
                 { name: 'AWS', level: 78, color: 'from-orange-400 to-yellow-500' },
                 { name: 'Vercel', level: 90, color: 'from-gray-400 to-gray-600' },
                 { name: 'Jest', level: 85, color: 'from-red-400 to-red-600' },
-                { name: 'Figma', level: 87, color: 'from-cyan-400 to-amber-500' },
+                { name: 'Figma', level: 87, color: 'from-purple-400 to-pink-500' },
             ]
         }
     };
@@ -57,19 +57,23 @@ const Skills = () => {
             name: 'IBM Data Science Professional Certificate',
             issuer: 'IBM    ',
             date: '2024',
-            badge: 'https://www.coursera.org/account/accomplishments/specialization/certificate/IM95Y8BNOPYB'
+            badge: 'https://www.coursera.org/account/accomplishments/specialization/certificate/IM95Y8BNOPYB',
+            // Optionnel: place une image (screenshot) dans public/certificates/ibm-data-science.png
+            image: '/certificates/ibm.png'
         },
         {
             name: 'Jenkins Specialization',
             issuer: 'LeanKartS',
             date: '2024',
-            badge: 'https://www.coursera.org/account/accomplishments/specialization/certificate/6PG0PDA03O3N'
+            badge: 'https://www.coursera.org/account/accomplishments/specialization/certificate/6PG0PDA03O3N',
+            image: '/certificates/jenkins.png'
         },
         {
             name: '.Net Full Stack Development',
             issuer: 'BoardInfinity',
             date: '2022',
-            badge: 'https://www.coursera.org/account/accomplishments/certificate/S41GXRZSPNJV'
+            badge: 'https://www.coursera.org/account/accomplishments/certificate/S41GXRZSPNJV',
+            image: '/certificates/dotnet.png'
         }
     ];
 
@@ -142,14 +146,34 @@ const Skills = () => {
                                 key={index}
                                 className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-105"
                             >
-                                {/* Badge Placeholder */}
-                                <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-cyan-400 to-amber-500 rounded-full flex items-center justify-center">
-                                    <span className="text-2xl">🏆</span>
+                                {/* Badge / Image */}
+                                <div className="w-full flex items-center justify-center mb-4">
+                                    {cert.image ? (
+                                        <img src={cert.image} alt={`${cert.name} badge`} className="max-h-20 object-contain rounded-md shadow-md" />
+                                    ) : (
+                                        <div className="w-20 h-20 bg-gradient-to-br from-cyan-400 to-amber-500 rounded-full flex items-center justify-center">
+                                            <span className="text-2xl">🏆</span>
+                                        </div>
+                                    )}
                                 </div>
 
                                 <h4 className="text-lg font-semibold mb-2 text-cyan-400">{cert.name}</h4>
                                 <p className="text-gray-300 mb-2">{cert.issuer}</p>
                                 <p className="text-gray-500 text-sm">{cert.date}</p>
+
+                                {/* Actions */}
+                                <div className="mt-4 flex justify-center gap-3">
+                                    {cert.badge && (
+                                        <a href={cert.badge} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white rounded-md text-sm">
+                                            Voir le certificat
+                                        </a>
+                                    )}
+                                    {cert.file && (
+                                        <a href={cert.file} download className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white rounded-md text-sm">
+                                            Télécharger
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -165,7 +189,7 @@ const Skills = () => {
                                 Web3 & Blockchain Development
                             </li>
                             <li className="flex items-center">
-                                <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                                <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                                 Machine Learning with TensorFlow
                             </li>
                             <li className="flex items-center">
@@ -191,11 +215,11 @@ const Skills = () => {
                                 User-centered design thinking
                             </li>
                             <li className="flex items-center">
-                                <div className="w-2 h-2 bg-blue-400 rounded-full mr-3"></div>
+                                <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></div>
                                 Performance optimization
                             </li>
                             <li className="flex items-center">
-                                <div className="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                                <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                                 Continuous learning & improvement
                             </li>
                         </ul>

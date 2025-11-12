@@ -170,7 +170,7 @@ const Projects = () => {
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <button
                                         onClick={() => openModal(project)}
-                                        className="px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors flex items-center"
+                                        className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-amber-600 text-white rounded-lg hover:from-cyan-600 hover:to-amber-700 transition-colors flex items-center"
                                     >
                                         <Eye size={16} className="mr-2" />
                                         View Details
@@ -291,7 +291,7 @@ const Projects = () => {
                                             </a>
                                             <a
                                                 href={selectedProject.live}
-                                                className="flex items-center px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg transition-colors"
+                                                className="flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-amber-600 hover:from-cyan-600 hover:to-amber-700 rounded-lg transition-colors"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                             >

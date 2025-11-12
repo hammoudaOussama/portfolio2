@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
@@ -21,24 +20,16 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // Initialize EmailJS
-      emailjs.init('WLR4k1bG5h1nhRw7X');
-
-      const result = await emailjs.send(
-        'service_x162a79',
-        'template_nqts7hx',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: 'hammoudaoussama23@gmail.com'
-        }
+      const result = await emailjs.sendForm(
+        'service_x162a79', // Vous devrez remplacer ceci par votre ID de service EmailJS
+        'template_nqts7hx', // Vous devrez remplacer ceci par votre ID de template EmailJS
+        form.current,
+        'WLR4k1bG5h1nhRw7X' // Vous devrez remplacer ceci par votre clé publique EmailJS
       );
 
       if (result.text === 'OK') {
@@ -51,7 +42,7 @@ const Contact = () => {
       }
     } catch (error) {
       setSubmitStatus('error');
-      console.log('Erreur:', error);
+      console.error('Error sending email:', error);
       // Reset error status after 3 seconds
       setTimeout(() => {
         setSubmitStatus('');
@@ -269,19 +260,12 @@ const Contact = () => {
                   </p>
                 </div>
               )}
-              {submitStatus === 'error' && (
-                <div className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg">
-                  <p className="text-red-400 text-center">
-                    ❌ Failed to send message. Please try again.
-                  </p>
-                </div>
-              )}
             </form>
           </div>
         </div>
 
         {/* Quick Actions */}
-        <div className="mt-16 text-center">
+            <div className="mt-16 text-center">
           <h3 className="text-xl font-semibold mb-6 text-white">Prefer a Quick Call?</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
