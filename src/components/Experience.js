@@ -6,7 +6,7 @@ const experiences = [
 	{
 		role: "Cloud Engineer",
 		company: "Zen Networks",
-		period: "2023 - Present",
+		period: "March 2025 - September 2025",
 		location: "Remote",
 		logo: "/logos/Zen.png",
 		description:
@@ -16,7 +16,7 @@ const experiences = [
 	{
 		role: "Data Analyst",
 		company: "T-MANDIS",
-		period: "2021 - 2023",
+		period: "July 2024 - September 2024",
 		location: "Casablanca",
 		logo: "/logos/T-MANDIS.png",
 		description:
@@ -26,7 +26,7 @@ const experiences = [
 	{
 		role: "Fullstack Developer",
 		company: "Marsa Maroc",
-		period: "2019 - 2021",
+		period: " July 2023 - August 2023",
 		location: "Casablanca",
 		logo: "/logos/marsa.png",
 		description:
